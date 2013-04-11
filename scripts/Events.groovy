@@ -1,7 +1,11 @@
 eventPackagePluginStart = {
+	def libDir = new File('lib')
+	if (!libDir.exists() || !libDir.isDirectory()) {
+		return
+	}
+
 	println "# eventPackagePluginStart :: Exploding inline dependencies..."
 	def dest = buildSettings.classesDir
-	def libDir = 'lib'
 	println "# eventPackagePluginStart :: Exploding from: $libDir to: $dest"
 	ant.unzip dest:dest, {
 		fileset dir:libDir, {
