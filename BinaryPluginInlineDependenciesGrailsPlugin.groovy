@@ -1,7 +1,7 @@
 class BinaryPluginInlineDependenciesGrailsPlugin {
 	def version = '0.1-SNAPSHOT'
 	def grailsVersion = "2.0 > *"
-	def title = 'Plugin Inline Dependencies'
+	def title = 'Binary Plugin Inline Dependencies'
 	def author = 'Alex Anderson'
 	def developers = [[name:'Burt Beckwith']]
 	def authorEmail = ''
