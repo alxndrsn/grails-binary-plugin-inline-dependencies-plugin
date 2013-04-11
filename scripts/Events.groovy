@@ -1,6 +1,6 @@
 eventPackagePluginStart = {
 	println "# eventPackagePluginStart :: Exploding inline dependencies..."
-	def dest = 'target/classes'
+	def dest = buildSettings.classesDir
 	def libDir = 'lib'
 	println "# eventPackagePluginStart :: Exploding from: $libDir to: $dest"
 	ant.unzip dest:dest, {
@@ -10,4 +10,3 @@ eventPackagePluginStart = {
 	}
 	println "# eventPackagePluginStart :: Exploding inline dependencies completed."
 }
-
